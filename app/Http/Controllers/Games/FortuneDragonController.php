@@ -232,7 +232,7 @@ class FortuneDragonController extends Controller
                 if($wildCount == count($indices)){
                     if(isset($multiplier[0][3])){
                         $winlines['wp'][$index] = $lines[$index];
-                        $winlines['wp'][$index] = $multiplier[0][3] * $bet;
+                        $winlines['lw'][$index] = $multiplier[0][3] * $bet;
                     }
                 }
             }

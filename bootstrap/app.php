@@ -15,7 +15,7 @@ return Application::configure(basePath: dirname(__DIR__))
             '/web-api/auth/session/v2/verifyOperatorPlayerSession',
             '/web-api/auth/session/v2/verifySession',
             '/web-api/game-proxy/v2/GameName/Get',
-            '/web-api/game-proxy/v2/Resources/GetByResourcesTypeIds',
+            '/web-api/game-proxy/v2/*',
             '/game-api/*/v2/GameInfo/Get',
             '/game-api/*/v2/Spin',
             '/testealgoritmos'

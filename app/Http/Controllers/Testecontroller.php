@@ -151,37 +151,45 @@ class Testecontroller extends Controller
     }
 
     public function testealgoritmos(){
-        $table = 9;
-        $symbols = [0,2,3,4,5,6,7];
-        $mult = [
-            0 => [3=>100],
-            2 => [3=>50],
-            3 => [3=>25],
-            4 => [3=>10],
-            5 => [3=>5],
-            6 => [3=>3],
-            7 => [3=>2]
-        ];
-
-        $lines = [
-            1=>[1,4,7],
-            2=>[0,3,6],
-            3=>[2,5,8],
-            4=>[0,4,8],
-            5=>[2,4,6]
-        ];
-        $bet = 0.4;
-
-        $time1 = microtime(true);
-        $sequence1 = $this->generateWin($symbols,$table,$lines,$mult,$bet);
-        $total1 = microtime(true) - $time1;
-        $result[] = ['linha1'=>$sequence1,'tempo1'=>$total1*1000];
-
-        $time2 = microtime(true);
-        $sequence2 = $this->gerarMatrizAleatoria($table, $symbols);
-        $total2 = microtime(true) - $time2;
-        $result[] = ['linha2'=>$sequence2,'tempo2'=>$total2*1000];
-
-        return $result;
+        return $_COOKIE;
+        
+        
+        
+        
+        
+        
+        
+        //$table = 9;
+        //$symbols = [0,2,3,4,5,6,7];
+        //$mult = [
+        //    0 => [3=>100],
+        //    2 => [3=>50],
+        //    3 => [3=>25],
+        //    4 => [3=>10],
+        //    5 => [3=>5],
+        //    6 => [3=>3],
+        //    7 => [3=>2]
+        //];
+//
+        //$lines = [
+        //    1=>[1,4,7],
+        //    2=>[0,3,6],
+        //    3=>[2,5,8],
+        //    4=>[0,4,8],
+        //    5=>[2,4,6]
+        //];
+        //$bet = 0.4;
+//
+        //$time1 = microtime(true);
+        //$sequence1 = $this->generateWin($symbols,$table,$lines,$mult,$bet);
+        //$total1 = microtime(true) - $time1;
+        //$result[] = ['linha1'=>$sequence1,'tempo1'=>$total1*1000];
+//
+        //$time2 = microtime(true);
+        //$sequence2 = $this->gerarMatrizAleatoria($table, $symbols);
+        //$total2 = microtime(true) - $time2;
+        //$result[] = ['linha2'=>$sequence2,'tempo2'=>$total2*1000];
+//
+        //return $result;
     }
 }
